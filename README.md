@@ -1,2 +1,2 @@
-# app-sns
-E-Com Plus app for AWS SNS as default email server
+# app-ses
+E-Com Plus app for AWS SES as default email server
