@@ -1,0 +1,118 @@
+{
+  "_id": "5cd31b98887ef430f1f6a5e0",
+  "app_id": 1244,
+  "state": "active",
+  "title": "app-ses",
+  "slug": "app-ses",
+  "paid": false,
+  "version": "0.0.1",
+  "version_date": "2019-04-03T03:00:00.000Z",
+  "type": "external",
+  "script_uri": "https://echo-requests.herokuapp.com/",
+  "status": "active",
+  "authentication": true,
+  "auth_callback_uri": "https://echo-requests.herokuapp.com/",
+  "admin_settings": {
+    "email_enabled": {
+      "schema": {
+        "type": "array",
+        "title": "Habilitar E-mails",
+        "description": "Selecione quais trigger que terão e-mails enviados",
+        "items": {
+          "type": "object",
+          "required": [
+            "trigger",
+            "sent"
+          ],
+          "properties": {
+            "trigger": {
+              "type": "string",
+              "enum": [
+                "boas-vindas",
+                "carrinho-abandonado",
+                "nota-fiscal",
+                "pacote-enviado",
+                "pagamento-aprovado",
+                "pedido-recebido",
+                "produto-entregue"
+              ],
+              "title": "Gatilhos",
+              "description": "Gatilho de e-mail"
+            },
+            "sent": {
+              "type": "object",
+              "title": "Enviar email para",
+              "description": "Define se o customer e o lojista receberam cópia dos e-mails disparados.",
+              "additionalProperties": false,
+              "required": [
+                "toCustomer",
+                "ccToLojista"
+              ],
+              "properties": {
+                "toCustomer": {
+                  "type": "boolean",
+                  "title": "Enviar e-mail para o cliente",
+                  "description": "Se ativado o cliente será notificado sempre que houver ação do trigger",
+                  "default": true
+                },
+                "ccToLojista": {
+                  "type": "boolean",
+                  "title": "Cópia lojista",
+                  "description": "Se configurada a opção, o logista é informado sempre que o trigger for acionado.",
+                  "default": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "hide": false
+    },
+    "lojista_mail": {
+      "schema": {
+        "type": "string",
+        "title": "E-mail do Lojista",
+        "description": "E-mail que será copiado nos triggers"
+      },
+      "hide": false
+    }
+  }
+  "auth_scope": {
+    "stores": [
+      "GET"
+    ],
+    "stores/me": [
+      "GET"
+    ],
+    "orders": [
+      "GET"
+    ],
+    "customers": [
+      "GET"
+    ],
+    "carts": [
+      "GET"
+    ]
+  },
+  "data": {
+    "email_enabled": [
+      {
+        "trigger": "pedido-recebido",
+        "sent": {
+          "toCustomer": true,
+          "ccToLojista": true
+        }
+      },
+      {
+        "trigger": "pacote-enviado",
+        "sent": {
+          "toCustomer": true,
+          "ccToLojista": true
+        }
+      }
+    ],
+    "lojista_mail": "talisson@e-com.club"
+  },
+  "store_id": 1011,
+  "created_at": "2019-05-08T18:10:32.636Z"
+}

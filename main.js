@@ -2,7 +2,7 @@
 
 const bodyParser = require('body-parser')
 const sqlite = require('sqlite3').verbose()
-const { ecomAuth } = require('ecomplus-app-sdk')
+const { ecomAuth, setup } = require('ecomplus-app-sdk')
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
