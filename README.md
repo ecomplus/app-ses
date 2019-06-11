@@ -1,2 +1,13 @@
 # app-ses
+
 E-Com Plus app for AWS SES as default email server
+
+## Production server
+
+Published at https://ses.ecomplus.biz
+
+### Continuous deployment
+
+When app version is **production ready**,
+[create a new release](https://github.com/ecomclub/app-ses/releases)
+to run automatic deploy from `master` branch.
