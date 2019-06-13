@@ -36,3 +36,5 @@ app.listen(port)
 
 // verificar carrinho abandonado
 require('./lib/services/cart-is-abandoned')({ ecomAuth, db })
+// regitra procedures
+require('./lib/services/setup-procedures')
