@@ -34,7 +34,9 @@ app.use(bodyParser.json())
 app.use(require('./lib/routes')({ ecomAuth, db }))
 app.listen(port)
 
-// verificar carrinho abandonado
-require('./lib/services/cart-is-abandoned')({ ecomAuth, db })
-// regitra procedures
-require('./lib/services/setup-procedures')
+// daemon processes
+// prevent running background process on multiple servers
+if (process.env.SCHEDULED_DEPLOYS === 'true' || process.env.SCHEDULED_DEPLOYS === true) {
+  require('./lib/services/cart-is-abandoned')({ ecomAuth, db })
+  require('./lib/services/setup-procedures')
+}
