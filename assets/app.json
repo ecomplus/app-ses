@@ -76,7 +76,7 @@
       },
       "hide": false
     }
-  }
+  },
   "auth_scope": {
     "stores": [
       "GET"
