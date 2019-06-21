@@ -1,5 +1,4 @@
 {
-  "_id": "5cd31b98887ef430f1f6a5e0",
   "app_id": 1244,
   "state": "active",
   "title": "app-ses",
@@ -8,10 +7,10 @@
   "version": "0.0.1",
   "version_date": "2019-04-03T03:00:00.000Z",
   "type": "external",
-  "script_uri": "https://echo-requests.herokuapp.com/",
+  "script_uri": "https://amazon-ses.ecomplus.biz/",
   "status": "active",
   "authentication": true,
-  "auth_callback_uri": "https://echo-requests.herokuapp.com/",
+  "auth_callback_uri": "https://amazon-ses.ecomplus.biz/callback",
   "admin_settings": {
     "email_enabled": {
       "schema": {
@@ -93,26 +92,5 @@
     "carts": [
       "GET"
     ]
-  },
-  "data": {
-    "email_enabled": [
-      {
-        "trigger": "pedido-recebido",
-        "sent": {
-          "toCustomer": true,
-          "ccToLojista": true
-        }
-      },
-      {
-        "trigger": "pacote-enviado",
-        "sent": {
-          "toCustomer": true,
-          "ccToLojista": true
-        }
-      }
-    ],
-    "lojista_mail": "talisson@e-com.club"
-  },
-  "store_id": 1011,
-  "created_at": "2019-05-08T18:10:32.636Z"
+  }
 }
