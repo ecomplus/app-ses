@@ -7,10 +7,10 @@
   "version": "0.0.1",
   "version_date": "2019-04-03T03:00:00.000Z",
   "type": "external",
-  "script_uri": "https://amazon-ses.ecomplus.biz/",
+  "script_uri": "https://ses.ecomplus.biz/",
   "status": "active",
   "authentication": true,
-  "auth_callback_uri": "https://amazon-ses.ecomplus.biz/callback",
+  "auth_callback_uri": "https://ses.ecomplus.biz/callback",
   "admin_settings": {
     "email_enabled": {
       "schema": {
@@ -91,6 +91,13 @@
     ],
     "carts": [
       "GET"
+    ],
+    "procedures":[
+      "POST",
+      "GET",
+      "PUT",
+      "PATCH",
+      "DELETE"
     ]
   }
 }

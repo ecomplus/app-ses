@@ -15,7 +15,7 @@ module.exports = [
       {
         'api': {
           'external_api': {
-            'uri': 'https://app-ses.ecomplus.biz/notification'
+            'uri': 'https://ses.ecomplus.biz/notification'
           }
         },
         'method': 'POST'

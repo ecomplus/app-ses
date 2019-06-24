@@ -3,11 +3,10 @@
 const logger = require('console-files')
 const bodyParser = require('body-parser')
 const sqlite = require('sqlite3').verbose()
-const { ecomAuth, ecomServerIps } = require('ecomplus-app-sdk')
+const { ecomAuth, ecomServerIps, setup } = require('ecomplus-app-sdk')
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-
 const db = new sqlite.Database(process.env.ECOM_AUTH_DB)
 
 app.use(bodyParser.urlencoded({ extended: false }))
