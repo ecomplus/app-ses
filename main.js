@@ -7,10 +7,11 @@ const { ecomAuth, ecomServerIps, setup } = require('ecomplus-app-sdk')
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-setup('/var/dbs/ses.sqlite')
+// setup('/var/dbs/ses.sqlite')
 const db = new sqlite.Database(process.env.ECOM_AUTH_DB)
 
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.text())
 app.use(bodyParser.json())
 
 app.use((req, res, next) => {
