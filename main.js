@@ -7,8 +7,29 @@ const { ecomAuth, setup } = require('ecomplus-app-sdk')
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 4222
-setup('/var/dbs/ses.sqlite')
-const db = new sqlite.Database(process.env.ECOM_AUTH_DB)
+
+const db = new sqlite.Database(process.env.ECOM_AUTH_DB, err => {
+  const error = err => {
+    // debug and destroy Node process
+    logger.error(err)
+    process.exit(1)
+  }
+
+  if (err) {
+    error(err)
+  } else {
+    // try to run first query creating table
+    db.run(
+      `CREATE TABLE IF NOT EXISTS amazon_notifications (
+        problem_type  STRING NOT NULL,
+        email_address STRING NOT NULL
+    );`, err => {
+        if (err) {
+          error(err)
+        }
+      })
+  }
+})
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
