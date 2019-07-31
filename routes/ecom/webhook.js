@@ -23,10 +23,9 @@ module.exports = appSdk => {
       .then(configObj => {
         /* Do the stuff */
         let { resource, action } = trigger
-
         let resourceId = trigger.resource_id || null
         let insertedId = trigger.inserted_id || null
-    
+
         // subresource?
         let subresource = trigger.subresource || null
         let subresourceId = trigger.subresource_id || null
