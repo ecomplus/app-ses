@@ -54,6 +54,8 @@ ecomAuth.then(appSdk => {
   })
 
   /* Add custom app routes here */
+  router.post('/aws-sns', bodyParser.text(), require(`${routes}/aws/ses`))
+  router.get('/unsubscribe-mail', require(`${routes}/aws/unsubscribe-mail`))
 
   // add router and start web server
   app.use(router)
