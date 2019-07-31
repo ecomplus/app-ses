@@ -34,4 +34,4 @@ ecomAuth.catch(err => {
 })
 
 /* Run other app background processes here */
-require('./../lib/abandoned-carts')({ ecomAuth })
+//require('./../lib/abandoned-carts')({ ecomAuth })
