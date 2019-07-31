@@ -10,51 +10,51 @@
   "script_uri": "https://ses.ecomplus.biz/",
   "status": "active",
   "authentication": true,
-  "auth_callback_uri": "https://ses.ecomplus.biz/callback",
+  "auth_callback_uri": "https://ses.ecomplus.biz/ecom/auth-callback",
   "admin_settings": {
-    "email_enabled": {
+    "transaction_mail": {
       "schema": {
         "type": "array",
         "title": "Habilitar E-mails",
         "description": "Selecione quais trigger que terão e-mails enviados",
+        "uniqueItems": true,
         "items": {
           "type": "object",
           "required": [
             "trigger",
-            "sent"
+            "to"
           ],
           "properties": {
             "trigger": {
               "type": "string",
               "enum": [
-                "boas-vindas",
-                "carrinho-abandonado",
-                "nota-fiscal",
-                "pacote-enviado",
-                "pagamento-aprovado",
-                "pedido-recebido",
-                "produto-entregue"
+                "welcome",
+                "abandonedCart",
+                "newOrder",
+                "delivered",
+                "payment",
+                "shipped"
               ],
               "title": "Gatilhos",
               "description": "Gatilho de e-mail"
             },
-            "sent": {
+            "to": {
               "type": "object",
               "title": "Enviar email para",
               "description": "Define se o customer e o lojista receberam cópia dos e-mails disparados.",
               "additionalProperties": false,
               "required": [
-                "toCustomer",
-                "ccToLojista"
+                "customer",
+                "storekeeper"
               ],
               "properties": {
-                "toCustomer": {
+                "customer": {
                   "type": "boolean",
                   "title": "Enviar e-mail para o cliente",
                   "description": "Se ativado o cliente será notificado sempre que houver ação do trigger",
                   "default": true
                 },
-                "ccToLojista": {
+                "storekeeper": {
                   "type": "boolean",
                   "title": "Cópia lojista",
                   "description": "Se configurada a opção, o logista é informado sempre que o trigger for acionado.",
