@@ -22,13 +22,7 @@ module.exports = appSdk => {
 
       .then(configObj => {
         /* Do the stuff */
-        let { resource, action } = trigger
-        let resourceId = trigger.resource_id || null
-        let insertedId = trigger.inserted_id || null
-
-        // subresource?
-        let subresource = trigger.subresource || null
-        let subresourceId = trigger.subresource_id || null
+        let { resource } = trigger
         switch (resource) {
           case 'carts': // abandoned cart
             require('./../../lib/register-carts')({ appSdk })(trigger)
@@ -36,7 +30,7 @@ module.exports = appSdk => {
           // case 'products':
           case 'orders':
           case 'customers':
-            require('./../../lib/notification-handler')(appSdk, configObj)(storeId, action, trigger, resource, resourceId, insertedId, subresource, subresourceId)
+            require('./../../lib/notification-handler')(appSdk, configObj)(trigger, storeId)
             break
           default: break
         }
