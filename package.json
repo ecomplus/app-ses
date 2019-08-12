@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/ecomclub/app-ses#readme",
   "dependencies": {
-    "@ecomplus/transactional-mails": "^0.5.1",
-    "aws-sdk": "^2.502.0",
+    "@ecomplus/transactional-mails": "^0.6.0",
+    "aws-sdk": "^2.507.0",
     "console-files": "^2.2.0",
     "ecomplus-app-sdk": "^1.9.8",
     "express": "^4.16.4",
@@ -27,8 +27,8 @@
     "nodemailer": "^6.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "husky": "^2.4.1",
     "standard": "^12.0.1"
   },
