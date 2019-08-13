@@ -92,12 +92,17 @@
     "carts": [
       "GET"
     ],
-    "procedures":[
+    "procedures": [
       "POST",
       "GET",
       "PUT",
       "PATCH",
       "DELETE"
+    ],
+    "orders/payments_history": [
+      "GET",
+      "POST",
+      "PATCH"
     ]
   }
 }
