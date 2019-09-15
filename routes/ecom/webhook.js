@@ -30,7 +30,7 @@ module.exports = appSdk => {
           // case 'products':
           case 'orders':
           case 'customers':
-            require('./../../lib/notification-handler')(appSdk, configObj)(trigger, storeId)
+            require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
             break
           default: break
         }
