@@ -33,7 +33,9 @@
                 "newOrder",
                 "delivered",
                 "payment",
-                "shipped"
+                "shipped",
+                "canceled",
+                "denied"
               ],
               "title": "Gatilhos",
               "description": "Gatilho de e-mail"
