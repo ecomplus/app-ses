@@ -5,7 +5,7 @@
   "description": "E-Com Plus app for AWS SES as default email server",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ECOM_AUTH_DB=/var/dbs/ses.sqlite LOGGER_OUTPUT=/var/log/nodejs/ses.out LOGGER_ERRORS=/var/log/nodejs/ses.error nodemon main.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/ecomclub/app-ses#readme",
   "dependencies": {
-    "@ecomplus/transactional-mails": "^0.6.0",
+    "@ecomplus/transactional-mails": "^0.7.0",
     "aws-sdk": "^2.507.0",
     "console-files": "^2.2.0",
     "ecomplus-app-sdk": "^1.9.8",
