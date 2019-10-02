@@ -121,6 +121,11 @@
       "GET",
       "POST",
       "PATCH"
+    ],
+    "orders/fulfillments": [
+      "GET",
+      "POST",
+      "PATCH"
     ]
   }
 }
