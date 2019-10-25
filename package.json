@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/ecomclub/app-ses#readme",
   "dependencies": {
-    "@ecomplus/transactional-mails": "^0.7.3",
-    "aws-sdk": "^2.553.0",
+    "@ecomplus/transactional-mails": "^0.7.5",
+    "aws-sdk": "^2.556.0",
     "console-files": "^2.2.0",
     "ecomplus-app-sdk": "^1.10.0",
     "express": "^4.16.4",
