@@ -126,6 +126,9 @@
       "GET",
       "POST",
       "PATCH"
+    ],
+    "orders/hidden_metafields": [
+      "POST"
     ]
   }
 }
