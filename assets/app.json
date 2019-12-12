@@ -1,7 +1,7 @@
 {
   "app_id": 1244,
   "state": "active",
-  "title": "E-mail gateway via Amazon SES",
+  "title": "E-mail gateway AWS SES",
   "slug": "app-ses",
   "paid": false,
   "version": "0.4.9",
