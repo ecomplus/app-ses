@@ -1,10 +1,10 @@
 {
   "app_id": 1244,
   "state": "active",
-  "title": "app-ses",
+  "title": "E-mail gateway AWS SES",
   "slug": "app-ses",
   "paid": false,
-  "version": "0.0.1",
+  "version": "0.4.9",
   "version_date": "2019-04-03T03:00:00.000Z",
   "type": "external",
   "script_uri": "https://ses.ecomplus.biz/",
