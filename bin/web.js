@@ -12,7 +12,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const router = express.Router()
-const port = process.env.PORT || 4200
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -46,11 +46,11 @@ ecomAuth.then(appSdk => {
   const routes = './../routes'
   router.get('/', require(`${routes}/`)())
 
-    // base routes for E-Com Plus Store API
-    ;['auth-callback', 'webhook'].forEach(endpoint => {
-      let filename = `/ecom/${endpoint}`
-      router.post(filename, require(`${routes}${filename}`)(appSdk))
-    })
+  // base routes for E-Com Plus Store API
+  ;['auth-callback', 'webhook'].forEach(endpoint => {
+    let filename = `/ecom/${endpoint}`
+    router.post(filename, require(`${routes}${filename}`)(appSdk))
+  })
 
   /* Add custom app routes here */
   router.post('/aws-sns', bodyParser.text(), require(`${routes}/aws/ses`))

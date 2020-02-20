@@ -92,6 +92,14 @@
         "description": "E-mail que será copiado nos triggers"
       },
       "hide": false
+    },
+    "is_abandoned_after_days": {
+      "hide": false,
+      "schema": {
+        "type": "integer",
+        "title": "Carrinho Abandonado",
+        "description": "Após quantos dias avisar ao comprador sobre o carrinho abandonado"
+      }
     }
   },
   "auth_scope": {
