@@ -12,79 +12,6 @@
   "authentication": true,
   "auth_callback_uri": "https://ses.ecomplus.biz/ecom/auth-callback",
   "admin_settings": {
-    "transaction_mail": {
-      "schema": {
-        "type": "array",
-        "title": "Habilitar E-mails",
-        "description": "Selecione quais trigger que terão e-mails enviados",
-        "uniqueItems": true,
-        "items": {
-          "type": "object",
-          "required": [
-            "trigger",
-            "to"
-          ],
-          "properties": {
-            "trigger": {
-              "type": "string",
-              "enum": [
-                "abandonedCart",
-                "authorized",
-                "delivered",
-                "inDispute",
-                "inProduction",
-                "inSeparation",
-                "invoiceIssued",
-                "new_order",
-                "paid",
-                "partiallyDelivered",
-                "partiallyPaid",
-                "partiallyRefunded",
-                "partiallyShipped",
-                "pending",
-                "readyForShipping",
-                "receivedForExchange",
-                "refunded",
-                "returned",
-                "returnedForExchange",
-                "shipped",
-                "unauthorized",
-                "underAnalysis",
-                "voided",
-                "welcome"
-              ],
-              "title": "Gatilhos",
-              "description": "Gatilho de e-mail"
-            },
-            "to": {
-              "type": "object",
-              "title": "Enviar email para",
-              "description": "Define se o customer e o lojista receberam cópia dos e-mails disparados.",
-              "additionalProperties": false,
-              "required": [
-                "customer",
-                "storekeeper"
-              ],
-              "properties": {
-                "customer": {
-                  "type": "boolean",
-                  "title": "Enviar e-mail para o cliente",
-                  "description": "Se ativado o cliente será notificado sempre que houver ação do trigger",
-                  "default": true
-                },
-                "storekeeper": {
-                  "type": "boolean",
-                  "title": "Cópia lojista",
-                  "description": "Se configurada a opção, o logista é informado sempre que o trigger for acionado.",
-                  "default": false
-                }
-              }
-            }
-          }
-        }
-      },
-      "hide": false
-    },
     "lojista_mail": {
       "schema": {
         "type": "string",
@@ -100,43 +27,459 @@
         "title": "Carrinho Abandonado",
         "description": "Após quantos dias avisar ao comprador sobre o carrinho abandonado"
       }
+    },
+    "lang": {
+      "schema": {
+        "type": "string",
+        "enum": ["Português", "Inglês"],
+        "title": "Idioma",
+        "description": "Em qual idioma os e-mails serão enviados",
+        "default": "Português"
+      },
+      "hide": false
+    },
+    "abandoned_cart": {
+      "schema": {
+        "type": "object",
+        "title": "Carrinho Abandonado",
+        "description": "E-mail para notificação de carrinho abandonado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "authorized": {
+      "schema": {
+        "type": "object",
+        "title": "Pagamento Autorizado",
+        "description": "Notificação de alteração de status para autorizado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "delivered": {
+      "schema": {
+        "type": "object",
+        "title": "Pedido Entregue",
+        "description": "Notificação de alteração de status para entregue",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "in_dispute": {
+      "schema": {
+        "type": "object",
+        "title": "Em Disputa",
+        "description": "Notificação de alteração de status para em disputa",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "in_production": {
+      "schema": {
+        "type": "object",
+        "title": "Em Produção",
+        "description": "Notificação de alteração de status para em produção",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "in_separation": {
+      "schema": {
+        "type": "object",
+        "title": "Em Separação",
+        "description": "Notificação de alteração de status para em separação",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "invoice_issued": {
+      "schema": {
+        "type": "object",
+        "title": "Nota Fiscal",
+        "description": "Notificação de nota fiscal emitida",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "new_order": {
+      "schema": {
+        "type": "object",
+        "title": "Novo Pedido",
+        "description": "Notificação de novo pedido na loja",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "paid": {
+      "schema": {
+        "type": "object",
+        "title": "Pago",
+        "description": "Notificação de alteração de status para pago",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "partially_delivered": {
+      "schema": {
+        "type": "object",
+        "title": "Parcialmente Entregue",
+        "description": "Notificação de alteração de status para parcialmente entregue",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "partially_paid": {
+      "schema": {
+        "type": "object",
+        "title": "Parcialmente Pago",
+        "description": "Notificação de alteração de status para parcialmente pago",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "partially_refunded": {
+      "schema": {
+        "type": "object",
+        "title": "Parcialmente Ressarcido",
+        "description": "Notificação de alteração de status para parcialmente ressarcido",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "partially_shipped": {
+      "schema": {
+        "type": "object",
+        "title": "Enviado parcialmente",
+        "description": "Notificação de alteração de status para enviado parcialmente",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "pending": {
+      "schema": {
+        "type": "object",
+        "title": "Pendente",
+        "description": "Notificação de alteração de status para pendente",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "ready_for_shipping": {
+      "schema": {
+        "type": "object",
+        "title": "Pronto para Envio",
+        "description": "Notificação de alteração de status para pronto para envio",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "received_for_exchange": {
+      "schema": {
+        "type": "object",
+        "title": "Recebido para Troca",
+        "description": "Notificação de alteração de status para recebido para troca",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "refunded": {
+      "schema": {
+        "type": "object",
+        "title": "Reembolsado",
+        "description": "Notificação de alteração de status para reembolsado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "returned": {
+      "schema": {
+        "type": "object",
+        "title": "Devolvido",
+        "description": "Notificação de alteração de status para em devolvido",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "returned_for_exchange": {
+      "schema": {
+        "type": "object",
+        "title": "Devolvido para Troca",
+        "description": "Notificação de alteração de status para devolvido para troca",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "shipped": {
+      "schema": {
+        "type": "object",
+        "title": "Enviado",
+        "description": "Notificação de alteração de status para enviado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "unauthorized": {
+      "schema": {
+        "type": "object",
+        "title": "Não Autorizado",
+        "description": "Notificação de alteração de status para não autorizado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "under_analysis": {
+      "schema": {
+        "type": "object",
+        "title": "Em Análise",
+        "description": "Notificação de alteração de status para em análise",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "voided": {
+      "schema": {
+        "type": "object",
+        "title": "Cancelado",
+        "description": "Notificação de alteração de status para cancelado",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
+    },
+    "welcome": {
+      "schema": {
+        "type": "object",
+        "title": "Bem vindo",
+        "description": "E-mail de boas vindas para cliente",
+        "properties": {
+          "disable_customer": {
+            "type": "boolean",
+            "title": "Desabilitar envio para cliente"
+          },
+          "disable_merchant": {
+            "type": "boolean",
+            "title": "Desabilitar envio para lojista"
+          }
+        }
+      },
+      "hide": false
     }
   },
   "auth_scope": {
-    "stores": [
-      "GET"
-    ],
-    "stores/me": [
-      "GET"
-    ],
-    "orders": [
-      "GET"
-    ],
-    "customers": [
-      "GET"
-    ],
-    "carts": [
-      "GET"
-    ],
-    "procedures": [
-      "POST",
-      "GET",
-      "PUT",
-      "PATCH",
-      "DELETE"
-    ],
-    "orders/payments_history": [
-      "GET",
-      "POST",
-      "PATCH"
-    ],
-    "orders/fulfillments": [
-      "GET",
-      "POST",
-      "PATCH"
-    ],
-    "orders/hidden_metafields": [
-      "POST"
-    ]
+    "stores": ["GET"],
+    "stores/me": ["GET"],
+    "orders": ["GET"],
+    "customers": ["GET"],
+    "carts": ["GET"],
+    "procedures": ["POST", "GET", "PUT", "PATCH", "DELETE"],
+    "orders/payments_history": ["GET", "POST", "PATCH"],
+    "orders/fulfillments": ["GET", "POST", "PATCH"],
+    "orders/hidden_metafields": ["POST"]
   }
 }
