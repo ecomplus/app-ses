@@ -5,7 +5,8 @@
   "description": "E-Com Plus app for AWS SES as default email server",
   "main": "main.js",
   "scripts": {
-    "dev": "APP_NAME=ses-dev APP_BASE_URI=https://talisson.pagekite.me ECOM_AUTH_DB=/var/dbs/ses.sqlite LOGGER_OUTPUT=/var/log/nodejs/ses.out LOGGER_ERRORS=/var/log/nodejs/ses.error nodemon --inspect main.js"
+    "dev": "APP_NAME=ses-dev APP_BASE_URI=https://talisson.pagekite.me ECOM_AUTH_DB=/var/dbs/ses.sqlite LOGGER_OUTPUT=/var/log/nodejs/ses.out LOGGER_ERRORS=/var/log/nodejs/ses.error nodemon --inspect main.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
     "ecomplus-app-sdk": "^1.10.0",
     "express": "^4.16.4",
     "moment": "^2.24.0",
-    "nodemailer": "^6.4.2"
+    "nodemailer": "^6.4.2",
+    "standard-version": "^7.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
