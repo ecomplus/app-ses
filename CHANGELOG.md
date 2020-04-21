@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.7](https://github.com/ecomclub/app-ses/compare/v0.5.6...v0.5.7) (2020-04-21)
+
+
+### Features
+
+* **assets:** creating description file ([18ca175](https://github.com/ecomclub/app-ses/commit/18ca1756842e5049f6f63f45ee04ecc6d0c8a297))
+* **icon:** creating a clearer icon for users ([4c83403](https://github.com/ecomclub/app-ses/commit/4c83403407c0e78cbb8e569292a7a127e21184a4))
+
 ### [0.5.6](https://github.com/ecomclub/app-ses/compare/v0.5.5...v0.5.6) (2020-04-17)
 
 ### [0.5.5](https://github.com/ecomclub/app-ses/compare/v0.5.4...v0.5.5) (2020-04-17)
