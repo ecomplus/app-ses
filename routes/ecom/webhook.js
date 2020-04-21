@@ -25,12 +25,17 @@ module.exports = appSdk => {
         let { resource } = trigger
         switch (resource) {
           case 'carts': // abandoned cart
-            require('./../../lib/register-carts')({ appSdk })(trigger)
+            if (configObj.is_abandoned_after_days) {
+              require('./../../lib/save-carts')({ appSdk })(trigger)
+            }
             break
           // case 'products':
           case 'orders':
           case 'customers':
-            require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
+            // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
+            if (configObj.lojista_mail) {
+              require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
+            }
             break
           default: break
         }

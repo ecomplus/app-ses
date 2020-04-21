@@ -23,6 +23,7 @@ ecomAuth.then(appSdk => {
       }
     })
   }
+  require('./../lib/carts-abandoned')(appSdk)
 })
 
 ecomAuth.catch(err => {
@@ -34,4 +35,3 @@ ecomAuth.catch(err => {
 })
 
 /* Run other app background processes here */
-require('./../lib/abandoned-carts')({ ecomAuth })

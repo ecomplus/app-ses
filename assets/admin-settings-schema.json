@@ -59,7 +59,7 @@
                 "$id": "#/properties/email_enabled/items/properties/sent/properties/ccToLojista",
                 "type": "boolean",
                 "title": "Cópia lojista",
-                "description": "Se configurada a opção, o logista é informado sempre que o trigger for acionado.",
+                "description": "Se configurada a opção, o lojsta é informado sempre que o trigger for acionado.",
                 "default": false
               }
             }
