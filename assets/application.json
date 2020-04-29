@@ -477,7 +477,7 @@
     "orders": ["GET"],
     "customers": ["GET"],
     "carts": ["GET"],
-    "procedures": ["POST", "GET", "PUT", "PATCH", "DELETE"],
+    "procedures": ["POST"],
     "orders/payments_history": ["GET", "POST", "PATCH"],
     "orders/fulfillments": ["GET", "POST", "PATCH"],
     "orders/hidden_metafields": ["POST"]
