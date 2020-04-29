@@ -1,8 +1,8 @@
 {
   "app": {
-    "title": "Frenet",
-    "short_description": "Faça o frete virar marketing do seu e-commerce e integre com mais de 245 transportadoras.",
-    "category": "inventory",
-    "icon": "https://e-com.club/mass/ftp/frenet.png"
+    "title": "E-mails transacionais padrão (SES)",
+    "short_description": "AWS SES (Amazon Simple Email Service)",
+    "category": "customer-service",
+    "icon": "https://market.e-com.plus/media/ty2NLRqDG39o.png"
   }
 }
