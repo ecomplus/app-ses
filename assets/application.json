@@ -51,6 +51,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão '{name}, você não finalizou sua compra!'"
           }
         }
       },
@@ -69,6 +74,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pagamento foi autorizado!'"
           }
         }
       },
@@ -87,6 +97,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, sua compra foi entregue!'"
           }
         }
       },
@@ -105,6 +120,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pedido está em disputa'"
           }
         }
       },
@@ -123,6 +143,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pedido já está em produção!'"
           }
         }
       },
@@ -141,6 +166,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, já estamos preparando seu pedido!'"
           }
         }
       },
@@ -159,6 +189,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, sua nota fiscal foi emitida'"
           }
         }
       },
@@ -177,6 +212,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, agradecemos por comprar conosco!'"
           }
         }
       },
@@ -195,6 +235,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, agradecemos a compra!'"
           }
         }
       },
@@ -213,6 +258,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, entregamos uma parte do seu pedido!'"
           }
         }
       },
@@ -231,6 +281,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, Recebemos parte do seu pagamento!'"
           }
         }
       },
@@ -249,6 +304,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pagamento foi parcialmente devolvido'"
           }
         }
       },
@@ -267,6 +327,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, parte do seu pedido está a caminho!'"
           }
         }
       },
@@ -285,6 +350,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, recebemos seu pedido!'"
           }
         }
       },
@@ -303,6 +373,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, já preparamos seu pedido!'"
           }
         }
       },
@@ -321,6 +396,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, recebemos seu pacote para troca.'"
           }
         }
       },
@@ -339,6 +419,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pagamento foi devolvido'"
           }
         }
       },
@@ -357,6 +442,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, recebemos seu pacote.'"
           }
         }
       },
@@ -375,6 +465,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, recebemos seu pacote para troca.'"
           }
         }
       },
@@ -393,6 +488,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pacote está a caminho!'"
           }
         }
       },
@@ -411,6 +511,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, não foi possível processar seu pagamento.'"
           }
         }
       },
@@ -429,6 +534,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pagamento está em análise!'"
           }
         }
       },
@@ -447,6 +557,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Olá {name}, seu pedido foi cancelado'"
           }
         }
       },
@@ -465,6 +580,11 @@
           "disable_merchant": {
             "type": "boolean",
             "title": "Desabilitar envio para lojista"
+          },
+          "custom_message": {
+            "type": "string",
+            "title": "Frase personalizada",
+            "description": "Frase padrão 'Boas vindas {name}!'"
           }
         }
       },
