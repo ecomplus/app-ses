@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.8](https://github.com/ecomclub/app-ses/compare/v0.5.7...v0.5.8) (2020-05-11)
+
+
+### Features
+
+* custom_message for transactional-mails (optionaly) ([f7130cf](https://github.com/ecomclub/app-ses/commit/f7130cfecdb8eba66e9c6dd3333b7f735f113c71))
+* custom_message for transactional-mails (optionaly) ([b1ef171](https://github.com/ecomclub/app-ses/commit/b1ef171360c87437568146a9d2812f91cc13da54))
+
+
+### Bug Fixes
+
+* **build:** market publish script ([471ca34](https://github.com/ecomclub/app-ses/commit/471ca34b4ee89a7cb911fa4b04ff2041ab7a5e8a))
+* **publish:market:** install dotenv ([7f9f519](https://github.com/ecomclub/app-ses/commit/7f9f51963ffc38d45c6f582fb182b4cc25e49ed5))
+
 ### [0.5.7](https://github.com/ecomclub/app-ses/compare/v0.5.6...v0.5.7) (2020-04-21)
 
 
