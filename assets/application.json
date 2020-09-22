@@ -4,7 +4,7 @@
   "title": "E-mail gateway AWS SES",
   "slug": "app-ses",
   "paid": false,
-  "version": "0.5.7",
+  "version": "0.5.21",
   "version_date": "2020-04-21T03:00:00.000Z",
   "type": "external",
   "script_uri": "https://ses.ecomplus.biz/",
