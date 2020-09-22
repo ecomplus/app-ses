@@ -1,5 +1,7 @@
 'use strict'
 
+// log on files
+const logger = require('console-files')
 // read configured E-Com Plus app data
 const getConfig = require(process.cwd() + '/lib/store-api/get-config')
 
@@ -23,6 +25,8 @@ module.exports = appSdk => {
       .then(configObj => {
         /* Do the stuff */
         let { resource } = trigger
+        logger.log(`> Webhook (${trigger._id}): #${storeId} ${trigger.resource_id} [${resource}]`)
+
         switch (resource) {
           case 'carts': // abandoned cart
             if (configObj.is_abandoned_after_days) {
@@ -37,10 +41,10 @@ module.exports = appSdk => {
               require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
-          default: break
         }
 
         // all done
+        logger.log(`> Webhook (${trigger._id}): ${trigger.resource_id} - OK`)
         res.send(ECHO_SUCCESS)
       })
 
