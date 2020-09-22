@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ecomclub/app-ses#readme",
   "dependencies": {
-    "@ecomplus/application-sdk": "^22.0.0-firestore.1.13.1",
+    "@ecomplus/application-sdk": "^11.0.0-sqlite.1.13.1",
     "@ecomplus/transactional-mails": "^1.7.0",
     "aws-sdk": "^2.757.0",
     "console-files": "^2.2.0",
