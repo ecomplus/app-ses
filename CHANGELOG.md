@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.23](https://github.com/ecomclub/app-ses/compare/v0.5.22...v0.5.23) (2020-09-22)
+
+
+### Bug Fixes
+
+* **deps:** fix @ecomplus/application-sdk version (sqlite) ([25fa501](https://github.com/ecomclub/app-ses/commit/25fa501b7c553a7302719d0c3cda92645657e49d))
+
 ### [0.5.22](https://github.com/ecomclub/app-ses/compare/v0.5.21...v0.5.22) (2020-09-22)
 
 
