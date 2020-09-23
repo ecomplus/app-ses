@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.25](https://github.com/ecomclub/app-ses/compare/v0.5.24...v0.5.25) (2020-09-23)
+
+
+### Bug Fixes
+
+* **deps:** update @ecomplus/transactional-mails to v1.8.0 ([0d183f7](https://github.com/ecomclub/app-ses/commit/0d183f774343a476ea038d020e5ac4c13cbd907c))
+* **email-retry:** skip retry when error 4xx received from store api ([d0a4ed5](https://github.com/ecomclub/app-ses/commit/d0a4ed52e3a2cdb24f74d45b5c8fd64b1a87e957))
+
 ### [0.5.24](https://github.com/ecomclub/app-ses/compare/v0.5.23...v0.5.24) (2020-09-22)
 
 ### [0.5.23](https://github.com/ecomclub/app-ses/compare/v0.5.22...v0.5.23) (2020-09-22)
