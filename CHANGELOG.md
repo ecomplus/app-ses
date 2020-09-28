@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.25](https://github.com/ecomclub/app-ses/compare/v0.5.21...v0.5.25) (2020-09-28)
+
+
+### Bug Fixes
+
+* **deps:** fix @ecomplus/application-sdk version (sqlite) ([25fa501](https://github.com/ecomclub/app-ses/commit/25fa501b7c553a7302719d0c3cda92645657e49d))
+* **deps:** update @ecomplus/application-sdk and transactional-mails ([8ebd9ca](https://github.com/ecomclub/app-ses/commit/8ebd9cad9dcccd9e1d1380660af9b4216a13f126))
+* **retry:** one minute and retry on first fail ([75666bd](https://github.com/ecomclub/app-ses/commit/75666bd266797a598ed2f3cef5446f744bc28302))
+
 ### [0.5.24](https://github.com/ecomclub/app-ses/compare/v0.5.23...v0.5.24) (2020-09-22)
 
 ### [0.5.23](https://github.com/ecomclub/app-ses/compare/v0.5.22...v0.5.23) (2020-09-22)
