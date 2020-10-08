@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.27](https://github.com/ecomclub/app-ses/compare/v0.5.26...v0.5.27) (2020-10-08)
+
+
+### Bug Fixes
+
+* **retry-delay:** edit range delay for email retry to 30000~180000 ([02910f1](https://github.com/ecomclub/app-ses/commit/02910f1fddbd80cd691a1de12fa35f438b3191bc))
+
 ### [0.5.26](https://github.com/ecomclub/app-ses/compare/v0.5.25...v0.5.26) (2020-09-28)
 
 
