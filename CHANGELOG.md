@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.32](https://github.com/ecomclub/app-ses/compare/v0.5.31...v0.5.32) (2020-10-18)
+
+
+### Bug Fixes
+
+* **email-notification:** skip under analysis status for recent orders ([2279a59](https://github.com/ecomclub/app-ses/commit/2279a59a653e4be4b05213d3b17b4906884206b6))
+
 ### [0.5.31](https://github.com/ecomclub/app-ses/compare/v0.5.30...v0.5.31) (2020-10-18)
 
 
