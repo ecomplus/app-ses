@@ -1,6 +1,6 @@
 {
   "name": "app-ses",
-  "version": "0.5.29",
+  "version": "0.5.30",
   "private": true,
   "description": "E-Com Plus app for AWS SES as default email server",
   "main": "main.js",
