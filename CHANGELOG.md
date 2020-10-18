@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.33](https://github.com/ecomclub/app-ses/compare/v0.5.32...v0.5.33) (2020-10-18)
+
+
+### Bug Fixes
+
+* **email-notification:** ensure considering last valid order status ([2d971d2](https://github.com/ecomclub/app-ses/commit/2d971d2984b1fb16391bbf317c92c0e44675e413))
+* **email-notification:** patch last valid status record ([d9c88c7](https://github.com/ecomclub/app-ses/commit/d9c88c74bf7e91c76445fa6c41fcc4212e40ee82))
+* **email-notification:** preset subject and message after status check ([dcca6a5](https://github.com/ecomclub/app-ses/commit/dcca6a5ac8462c6092bf3c866537b35d5fcf83b1))
+
 ### [0.5.32](https://github.com/ecomclub/app-ses/compare/v0.5.31...v0.5.32) (2020-10-18)
 
 
