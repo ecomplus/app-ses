@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.34](https://github.com/ecomclub/app-ses/compare/v0.5.26...v0.5.34) (2020-10-29)
+
+
+### Bug Fixes
+
+* **email-content:** skip new order email for negative status ([243f397](https://github.com/ecomclub/app-ses/commit/243f3979a2120e56915bebbc2dabd9b7a98ea813))
+* **email-content:** skip new order email when main status is cancelled ([1222444](https://github.com/ecomclub/app-ses/commit/12224440a5a81b63fd1f4e7a97e8102067eb1ce3))
+* **email-notification:** ensure considering last valid order status ([2d971d2](https://github.com/ecomclub/app-ses/commit/2d971d2984b1fb16391bbf317c92c0e44675e413))
+* **email-notification:** fix checking last notified status ([8ecc673](https://github.com/ecomclub/app-ses/commit/8ecc67325e74aa682d4b7d797bd75dce51d618a5))
+* **email-notification:** patch last valid status record ([d9c88c7](https://github.com/ecomclub/app-ses/commit/d9c88c74bf7e91c76445fa6c41fcc4212e40ee82))
+* **email-notification:** preset subject and message after status check ([dcca6a5](https://github.com/ecomclub/app-ses/commit/dcca6a5ac8462c6092bf3c866537b35d5fcf83b1))
+* **email-notification:** skip under analysis status for recent orders ([2279a59](https://github.com/ecomclub/app-ses/commit/2279a59a653e4be4b05213d3b17b4906884206b6))
+* **retry-delay:** edit range delay for email retry to 30000~180000 ([02910f1](https://github.com/ecomclub/app-ses/commit/02910f1fddbd80cd691a1de12fa35f438b3191bc))
+
 ### [0.5.33](https://github.com/ecomclub/app-ses/compare/v0.5.32...v0.5.33) (2020-10-18)
 
 
