@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ecomclub/app-ses#readme",
   "dependencies": {
     "@ecomplus/application-sdk": "^11.0.0-sqlite.1.13.1",
-    "@ecomplus/transactional-mails": "^1.9.1",
+    "@ecomplus/transactional-mails": "^1.9.2",
     "aws-sdk": "^2.757.0",
     "console-files": "^2.2.0",
     "express": "^4.17.1",
