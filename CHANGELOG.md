@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.47](https://github.com/ecomclub/app-ses/compare/v0.5.46...v0.5.47) (2022-04-08)
+
 ### [0.5.46](https://github.com/ecomclub/app-ses/compare/v0.5.45...v0.5.46) (2021-10-22)
 
 ### [0.5.45](https://github.com/ecomclub/app-ses/compare/v0.5.44...v0.5.45) (2021-10-21)
