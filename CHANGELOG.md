@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.48](https://github.com/ecomclub/app-ses/compare/v0.5.47...v0.5.48) (2022-04-09)
+
+
+### Bug Fixes
+
+* **abandoned-carts:** limit handled carts from up to 30 last days ([da4be53](https://github.com/ecomclub/app-ses/commit/da4be53ce6f8c6a5531d35963cf26bc550b0a03b))
+
 ### [0.5.47](https://github.com/ecomclub/app-ses/compare/v0.5.46...v0.5.47) (2022-04-08)
 
 ### [0.5.46](https://github.com/ecomclub/app-ses/compare/v0.5.45...v0.5.46) (2021-10-22)
