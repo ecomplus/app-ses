@@ -23,7 +23,7 @@ ecomAuth.then(appSdk => {
       }
     })
   }
-  require('./../lib/carts-abandoned')(appSdk)
+  //require('./../lib/carts-abandoned')(appSdk)
 })
 
 ecomAuth.catch(err => {
