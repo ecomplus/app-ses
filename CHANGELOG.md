@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.51](https://github.com/ecomclub/app-ses/compare/v0.5.50...v0.5.51) (2022-10-14)
+
+
+### Bug Fixes
+
+* **carts-abandoned:** send only if final date is equal to send date ([4d2c794](https://github.com/ecomclub/app-ses/commit/4d2c79457a8d4e4e555cea45635fe1c2f78eb22e))
+
 ### [0.5.50](https://github.com/ecomclub/app-ses/compare/v0.5.49...v0.5.50) (2022-10-14)
 
 
