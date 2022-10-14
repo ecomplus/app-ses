@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.50](https://github.com/ecomclub/app-ses/compare/v0.5.49...v0.5.50) (2022-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update @ecomplus/transactional-mails to v1.11.1 ([85eaf62](https://github.com/ecomclub/app-ses/commit/85eaf62d177550948bacdb244fcfc201b198bed5))
+
 ### [0.5.49](https://github.com/ecomclub/app-ses/compare/v0.5.48...v0.5.49) (2022-04-10)
 
 ### [0.5.48](https://github.com/ecomclub/app-ses/compare/v0.5.47...v0.5.48) (2022-04-09)
