@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.53](https://github.com/ecomclub/app-ses/compare/v0.5.52...v0.5.53) (2022-11-30)
+
+
+### Features
+
+* enabling abandoned carts daemon again ([8be1d46](https://github.com/ecomclub/app-ses/commit/8be1d46a9638d1609cf99a0dd54a2729fa9dc8c0))
+
+
+### Bug Fixes
+
+* **cart-abandoned:** delete old carts and change order of getting carts ([2d3bb70](https://github.com/ecomclub/app-ses/commit/2d3bb704afd1cec438cc80681f8a5384fc090b85))
+* **carts-abandoned:** use await in some functions ([5853132](https://github.com/ecomclub/app-ses/commit/5853132138ad5ec68de317dae0d6d4b380e06bb2))
+* **save-carts:** delete carts are not available ([c471ef1](https://github.com/ecomclub/app-ses/commit/c471ef1fbd1c8df76c9d29730999f904362f2ff3))
+* **save-carts:** remove completed carts ([54bbf70](https://github.com/ecomclub/app-ses/commit/54bbf7098610b7af18b05d674873e1656fcd2cff))
+
 ### [0.5.52](https://github.com/ecomclub/app-ses/compare/v0.5.51...v0.5.52) (2022-10-14)
 
 ### [0.5.51](https://github.com/ecomclub/app-ses/compare/v0.5.50...v0.5.51) (2022-10-14)
