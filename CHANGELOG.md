@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.55](https://github.com/ecomclub/app-ses/compare/v0.5.54...v0.5.55) (2022-12-07)
+
+
+### Bug Fixes
+
+* **carts-abandoned:** bug fix when deleting old carts ([9018e2f](https://github.com/ecomclub/app-ses/commit/9018e2fb1866a4a78b89f7493409f47a32324e8f))
+* **carts-abandoned:** fix getMonth function call and use of GROUP BY ([650d77b](https://github.com/ecomclub/app-ses/commit/650d77b8eb7ca96ff36f14354991363a6d5b4ba8))
+
 ### [0.5.54](https://github.com/ecomclub/app-ses/compare/v0.5.53...v0.5.54) (2022-12-07)
 
 
