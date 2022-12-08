@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.60](https://github.com/ecomclub/app-ses/compare/v0.5.59...v0.5.60) (2022-12-08)
+
+
+### Bug Fixes
+
+* **cart-abandoned:** not delete carts not found or with app without auth ([4f0c755](https://github.com/ecomclub/app-ses/commit/4f0c75544f5eecbe9423e43248c55c8562440a70))
+
 ### [0.5.59](https://github.com/ecomclub/app-ses/compare/v0.5.58...v0.5.59) (2022-12-08)
 
 ### [0.5.58](https://github.com/ecomclub/app-ses/compare/v0.5.57...v0.5.58) (2022-12-08)
