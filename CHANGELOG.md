@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.64](https://github.com/ecomclub/app-ses/compare/v0.5.63...v0.5.64) (2022-12-08)
+
+
+### Bug Fixes
+
+* **carts:** remove email submission validation for testing and logs ([bc7a653](https://github.com/ecomclub/app-ses/commit/bc7a65342df918ed59d12ea2aa00d888cef446ef))
+
 ### [0.5.63](https://github.com/ecomclub/app-ses/compare/v0.5.62...v0.5.63) (2022-12-08)
 
 
