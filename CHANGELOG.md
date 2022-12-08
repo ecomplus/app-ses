@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.56](https://github.com/ecomclub/app-ses/compare/v0.5.52...v0.5.56) (2022-12-08)
+
+
+### Features
+
+* enabling abandoned carts daemon again ([8be1d46](https://github.com/ecomclub/app-ses/commit/8be1d46a9638d1609cf99a0dd54a2729fa9dc8c0))
+
+
+### Bug Fixes
+
+* **cart-abandoned:** delete old carts and change order of getting carts ([2d3bb70](https://github.com/ecomclub/app-ses/commit/2d3bb704afd1cec438cc80681f8a5384fc090b85))
+* **carts-abandoned:** bug fix when deleting old carts ([9018e2f](https://github.com/ecomclub/app-ses/commit/9018e2fb1866a4a78b89f7493409f47a32324e8f))
+* **carts-abandoned:** fix getMonth function call and use of GROUP BY ([650d77b](https://github.com/ecomclub/app-ses/commit/650d77b8eb7ca96ff36f14354991363a6d5b4ba8))
+* **carts-abandoned:** fix getMonth function call and use of GROUP BY ([#25](https://github.com/ecomclub/app-ses/issues/25)) ([9f547da](https://github.com/ecomclub/app-ses/commit/9f547da9b70d029062846430ec9522897c262a7d))
+* **carts-abandoned:** use await in some functions ([5853132](https://github.com/ecomclub/app-ses/commit/5853132138ad5ec68de317dae0d6d4b380e06bb2))
+* **save-carts:** add logs to identify failures ([422001c](https://github.com/ecomclub/app-ses/commit/422001c937f8e8f4a6063d727a6a7ba81daccfcf))
+* **save-carts:** delete carts are not available ([c471ef1](https://github.com/ecomclub/app-ses/commit/c471ef1fbd1c8df76c9d29730999f904362f2ff3))
+* **save-carts:** remove completed carts ([54bbf70](https://github.com/ecomclub/app-ses/commit/54bbf7098610b7af18b05d674873e1656fcd2cff))
+
 ### [0.5.55](https://github.com/ecomclub/app-ses/compare/v0.5.54...v0.5.55) (2022-12-07)
 
 
