@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.63](https://github.com/ecomclub/app-ses/compare/v0.5.62...v0.5.63) (2022-12-08)
+
+
+### Bug Fixes
+
+* **cart-abandoned:** fix query to delete cart after email ([40edede](https://github.com/ecomclub/app-ses/commit/40edede40432fcadde40e63bd62f305cba78f41d))
+
 ### [0.5.62](https://github.com/ecomclub/app-ses/compare/v0.5.61...v0.5.62) (2022-12-08)
 
 
