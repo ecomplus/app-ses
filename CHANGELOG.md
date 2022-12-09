@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.68](https://github.com/ecomclub/app-ses/compare/v0.5.67...v0.5.68) (2022-12-09)
+
+
+### Bug Fixes
+
+* **carts-abandoned:** handle no auth error on proper catch ([b51aeba](https://github.com/ecomclub/app-ses/commit/b51aeba64d5c95d2b11beac2cfee14c112abcce6))
+
 ### [0.5.67](https://github.com/ecomclub/app-ses/compare/v0.5.66...v0.5.67) (2022-12-09)
 
 
