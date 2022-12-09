@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.67](https://github.com/ecomclub/app-ses/compare/v0.5.66...v0.5.67) (2022-12-09)
+
+
+### Bug Fixes
+
+* update values to delete cart on notification ok ([e9922a8](https://github.com/ecomclub/app-ses/commit/e9922a8803a7430562e3aa5853c855be75d6ca8d))
+
 ### [0.5.66](https://github.com/ecomclub/app-ses/compare/v0.5.65...v0.5.66) (2022-12-09)
 
 
