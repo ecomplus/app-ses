@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.65](https://github.com/ecomclub/app-ses/compare/v0.5.64...v0.5.65) (2022-12-09)
+
+
+### Bug Fixes
+
+* **carts-abandoned:** correcting variable names ([b2a9b3c](https://github.com/ecomclub/app-ses/commit/b2a9b3c89b16f8063ca55199bb48a2df64cde23b))
+* **carts-abandoned:** delete all carts if the store does not have auth ([df69b16](https://github.com/ecomclub/app-ses/commit/df69b163a92b7dad5d7eee34db5e1d8922b2fdc2))
+* **carts-abandoned:** delete cart not found or with app without auth ([840583c](https://github.com/ecomclub/app-ses/commit/840583c35031b4a5976ac2c4967aa44c268e3807))
+* **carts-abandoned:** fix delayed emails not sending and bottlenecks ([e796067](https://github.com/ecomclub/app-ses/commit/e79606782e673ce6b7865821c3d34c41d9ae6f61))
+* **carts-abandoned:** fix is_abandoned_after_days variable as optional ([74253af](https://github.com/ecomclub/app-ses/commit/74253afd84766136688aae2c546683ec6366a819))
+
 ### [0.5.64](https://github.com/ecomclub/app-ses/compare/v0.5.63...v0.5.64) (2022-12-08)
 
 
