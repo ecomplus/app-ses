@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.66](https://github.com/ecomclub/app-ses/compare/v0.5.65...v0.5.66) (2022-12-09)
+
+
+### Bug Fixes
+
+* delete all carts of customer after a cart completed (order) ([b62e741](https://github.com/ecomclub/app-ses/commit/b62e741f089fb1ec80705940414e0e4fc1744455))
+* remove all abandoned carts by customer id after success email send ([be3bfa1](https://github.com/ecomclub/app-ses/commit/be3bfa1b046f292b7e869f5e3a3ed9c2aa5779ce))
+
 ### [0.5.65](https://github.com/ecomclub/app-ses/compare/v0.5.64...v0.5.65) (2022-12-09)
 
 
