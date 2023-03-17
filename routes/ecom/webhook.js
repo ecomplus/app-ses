@@ -37,7 +37,13 @@ module.exports = appSdk => {
           case 'orders':
           case 'customers':
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
+            if (Number(storeId) === 1011) {
+              console.log('Storeid', trigger.resource_id)
+            }
             if (configObj.lojista_mail) {
+              if (Number(storeId) === 1011) {
+                console.log('Email', configObj.lojista_mail)
+              }
               require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
