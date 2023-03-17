@@ -37,15 +37,10 @@ module.exports = appSdk => {
           case 'orders':
           case 'customers':
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
-            logger.log(typeof storeId)
-            logger.log('Pre envio', Number(storeId) === 1011)
-            if (Number(storeId) === 1011) {
-              console.log('Storeid', trigger.resource_id)
+            if (storeId === 1011) {
+              logger.log('Storeid', trigger.resource_id, JSON.stringify(configObj))
             }
             if (configObj.lojista_mail) {
-              if (Number(storeId) === 1011) {
-                console.log('Email', configObj.lojista_mail)
-              }
               require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
