@@ -37,6 +37,8 @@ module.exports = appSdk => {
           case 'orders':
           case 'customers':
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
+            logger.log(typeof storeId)
+            logger.log('Pre envio', Number(storeId) === 1011)
             if (Number(storeId) === 1011) {
               console.log('Storeid', trigger.resource_id)
             }
