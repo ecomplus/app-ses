@@ -40,7 +40,7 @@ module.exports = appSdk => {
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
             if (configObj.lojista_mail) {
               if (storeId === 1011) {
-                logger.log('Storeid', trigger.resource_id, configObj.lojista_mail, emailNotification)
+                logger.log('Storeid', trigger.resource_id, configObj.lojista_mail)
               }
               emailNotification({ appSdk, configObj })(trigger, storeId)
             }
