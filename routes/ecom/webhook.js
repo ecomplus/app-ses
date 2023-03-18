@@ -4,7 +4,6 @@
 const logger = require('console-files')
 // read configured E-Com Plus app data
 const getConfig = require(process.cwd() + '/lib/store-api/get-config')
-const transactionalMails = require('@ecomplus/transactional-mails')
 
 const SKIP_TRIGGER_NAME = 'SkipTrigger'
 const ECHO_SUCCESS = 'SUCCESS'
@@ -19,12 +18,11 @@ module.exports = async appSdk => {
     Treat E-Com Plus trigger body here
     // https://developers.e-com.plus/docs/api/#/store/triggers/
     */
-   logger.log(transactionalMails)
 
     // get app configured options
     getConfig({ appSdk, storeId })
 
-      .then(async configObj => {
+      .then(configObj => {
         /* Do the stuff */
         let { resource } = trigger
         logger.log(`> Webhook (${trigger._id}): #${storeId} ${trigger.resource_id} [${resource}]`)
@@ -41,7 +39,7 @@ module.exports = async appSdk => {
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
             if (configObj.lojista_mail) {
               logger.log('Email', configObj.lojista_mail)
-              await require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
+              require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
         }
