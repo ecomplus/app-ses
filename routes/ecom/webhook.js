@@ -47,7 +47,8 @@ module.exports = appSdk => {
         }
 
         // all done
-        logger.log(`> Webhook (${trigger._id}): ${trigger.resource_id} - OK`)
+        logger.log('trigger', JSON.stringify(trigger))
+        logger.log(`> Webhook ${resource} (${trigger._id}): ${trigger.resource_id} - OK`)
         res.send(ECHO_SUCCESS)
       })
 
