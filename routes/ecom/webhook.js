@@ -10,7 +10,7 @@ const ECHO_SUCCESS = 'SUCCESS'
 const ECHO_SKIP = 'SKIP'
 const ECHO_API_ERROR = 'STORE_API_ERR'
 
-module.exports = async appSdk => {
+module.exports = appSdk => {
   return (req, res) => {
     const { storeId } = req
     const trigger = req.body
@@ -38,7 +38,6 @@ module.exports = async appSdk => {
           case 'customers':
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
             if (configObj.lojista_mail) {
-              logger.log('Email', configObj.lojista_mail)
               require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
