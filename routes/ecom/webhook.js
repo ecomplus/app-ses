@@ -4,7 +4,6 @@
 const logger = require('console-files')
 // read configured E-Com Plus app data
 const getConfig = require(process.cwd() + '/lib/store-api/get-config')
-const emailNotification = require('./../../lib/email-notification')
 
 const SKIP_TRIGGER_NAME = 'SkipTrigger'
 const ECHO_SUCCESS = 'SUCCESS'
@@ -40,15 +39,15 @@ module.exports = appSdk => {
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
             if (configObj.lojista_mail) {
               if (storeId === 1011) {
-                logger.log('Storeid', trigger.resource_id, configObj.lojista_mail)
+                console.log('Email', configObj.lojista_mail)
               }
-              emailNotification({ appSdk, configObj })(trigger, storeId)
+              require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
         }
 
         // all done
-        logger.log(`> Webhook ${resource} (${trigger._id}): ${trigger.resource_id} - OK`)
+        logger.log(`> Webhook (${trigger._id}): ${trigger.resource_id} - OK`)
         res.send(ECHO_SUCCESS)
       })
 
