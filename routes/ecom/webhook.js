@@ -37,17 +37,15 @@ module.exports = appSdk => {
           case 'orders':
           case 'customers':
             // require('./../../lib/mail-dispatch')(appSdk, configObj)(trigger, storeId)
+            logger.log(`ntes`)
             if (configObj.lojista_mail) {
-              if (storeId === 1011) {
-                console.log('Email', configObj.lojista_mail)
-              }
+              logger.log('Email', configObj.lojista_mail)
               require('./../../lib/email-notification')({ appSdk, configObj })(trigger, storeId)
             }
             break
         }
 
         // all done
-        logger.log('trigger', JSON.stringify(trigger))
         logger.log(`> Webhook ${resource} (${trigger._id}): ${trigger.resource_id} - OK`)
         res.send(ECHO_SUCCESS)
       })
