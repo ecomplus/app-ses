@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.97](https://github.com/ecomclub/app-ses/compare/v0.5.96...v0.5.97) (2026-07-25)
+
+
+### Bug Fixes
+
+* avoid resending notification e-mail on customer_notified retry ([e812fd8](https://github.com/ecomclub/app-ses/commit/e812fd889a1e336b4ec7eff1bf69ca3ef0ba0c61))
+
 ### [0.5.96](https://github.com/ecomclub/app-ses/compare/v0.5.95...v0.5.96) (2024-09-18)
 
 ### [0.5.95](https://github.com/ecomclub/app-ses/compare/v0.5.94...v0.5.95) (2024-03-23)
