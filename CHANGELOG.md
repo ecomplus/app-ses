@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.98](https://github.com/ecomclub/app-ses/compare/v0.5.97...v0.5.98) (2026-07-26)
+
+
+### Bug Fixes
+
+* hold the per-order lock until the notification attempt finishes ([efd0a0a](https://github.com/ecomclub/app-ses/commit/efd0a0a4b80d511308c671865c7041e020bcd53b))
+
 ### [0.5.97](https://github.com/ecomclub/app-ses/compare/v0.5.96...v0.5.97) (2026-07-25)
 
 
